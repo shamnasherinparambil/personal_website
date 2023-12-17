@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth;">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <header class="bg-info ">
+    <header class="bg-info" style="position: fixed;width: 100%; z-index: 1;">
         <div class="row text-white p-2 pl-5"> 
             <div class="col-md-6 col-9" >
                 <h2>Shamna Sherin P</h2>
@@ -22,19 +22,16 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                       <ul class="navbar-nav ml-auto ">
                         <li class="nav-item active">
-                          <a class="nav-link text-white" href="#">Home <span class="sr-only">(current)</span></a>
+                          <a class="nav-link text-white" href="#home-section">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link text-white" href="#">Skills</a>
+                          <a class="nav-link text-white" href="#skill-section">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Education</a>
+                            <a class="nav-link text-white" href="#education-section">Education</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Experience</a>
-                        </li>  
-                        <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contact Me</a>
+                            <a class="nav-link text-white" href="#contact-section">Contact Me</a>
                           </li>
                     </div>
                   </nav>
@@ -42,16 +39,16 @@
         </div>
         
     </header>
-    <section class="p-4 ">
+    <section id="home-section" style="padding-top: 7em;">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <img src="https://media.licdn.com/dms/image/C4D03AQEFTB65UYaPMw/profile-displayphoto-shrink_800_800/0/1661611000254?e=1707955200&v=beta&t=ksdnsQF6o3tFrP1aEtWGiLLaOrw1_bHaxF5vwpR44mA" alt="unavailable" class="img-fluid rounded-circle">
                 </div>
                 <div class="col-md-6">
-                    <h4>Software Engineer<br>
+                    <h2>Software Engineer<br>
                     Kerala, India <br>
-                </h4>
+                </h2>
                     <p>A talented, ambitious and
                         hardworking Btech graduate, Looking
                         for a software engineer position in a
@@ -66,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section class="bg-light p-5" id="skill-section">
         <div class="container">
             <h1 class="text-center">Skills</h1>
             <div class="row pt-3">
@@ -190,12 +187,12 @@
         </div>
     </div>    
     </section>
-    <section class="bg-light p-5">
+    <section class="p-5" id="education-section">
         <div class="container">
-            <h1 class="text-center">Education</h1>
+            <h1 class="text-center p-3">Education</h1>
             <div class="row">
                 <div class="col-md-4">
-                    <div class="card text-center p-3" style="width: 18rem; height: 20rem;">
+                    <div class="card text-center p-3 " style="width: 18rem; height: 20rem;">
                         <i class="fa-solid fa-graduation-cap display-1 text-info"></i>
                         <div class="card-body">
                           <h5 class="card-title">Batchelors</h5>
@@ -242,6 +239,59 @@
         </div>
 
     </section>
+    <section class="bg-light" id="contact-section">
+        <div class="container">
+            <h1 class="text-center p-3"> Contact Me </h1>
+            <div class="row p-3">
+                <div class="col-md-12">
+                <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Name</label>
+                        <input type="text" class="form-control" id="inputName" placeholder="Name">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Place</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Place">
+                      </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Email</label>
+                            <input type="email" class="form-control" id="inputAddress" placeholder="Email">
+                          </div>
+                          <div class="form-group col-md-6">
+                            <label for="inputAddress2">Mobile</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Mobile">
+                          </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Message</label>
+                
+                        <textarea class="form-control" cols="30" rows="10" placeholder="Type your message here"></textarea>
+                      </div>
+
+                    <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary "style="width:100%">Submit</button></div> 
+                  </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center text-white" >
+                    <a href="#"><i class="fa-brands fa-instagram text-white"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook text-white pl-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp text-white pl-2"></i></a>
+                    <p>Copyrights</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 </body>
 
 
